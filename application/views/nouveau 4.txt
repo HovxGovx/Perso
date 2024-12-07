@@ -1,0 +1,47 @@
+<div class="card">
+              <div class="card-header">
+                <h3 class="card-title">DataTable with default features</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  
+                   <tr>
+						<th>ID Dossier</th>
+						<th>ID Demandeur</th>
+						<th>ID Terrain</th>
+						<th>Numéro de dossier</th>
+						<th>Objet de la fiche</th>
+						<th>Date de la demande</th>
+						<th>Nature de la demande</th>
+						<th>Description</th>
+						<th>Type d'affaire</th>
+						<th>Numéro d'affaire</th>
+					</tr>
+					
+                  </thead>
+                  <tbody>
+						<?php foreach ($dossiers as $dossier): ?>
+											<tr>
+												<td><?php echo $dossier['id_dossier']; ?></td>
+												<td><?php echo $dossier['id_demandeur']; ?></td>
+												<td><?php echo $dossier['id_terrain']; ?></td>
+												<td><?php echo $dossier['numdossier']; ?></td>
+												<td><?php echo $dossier['objetfiche']; ?></td>
+												<td><?php echo $dossier['date_demande']; ?></td>
+												<td><?php echo $dossier['nature_demande']; ?></td>
+												<td><?php echo $dossier['description']; ?></td>
+												<td><?php echo $dossier['type_affaire']; ?></td>
+												<td><?php echo $dossier['num_affaire']; ?></td>
+											</tr>
+						<?php endforeach; ?>
+                  </tbody>
+                  <a href="<?php echo site_url('responsable/add'); ?>">
+								<input type="submit" value="Ajouter un utilisateur" class="btn btn-success float-right">
+								</a>
+                </table>
+              </div>
+              <!-- /.card-body -->
+</div>
+            

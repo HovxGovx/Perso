@@ -1,0 +1,26 @@
+{
+        $data['responsables'] = $this->Responsable_model->get_all_responsables();
+        $this->load->view('responsable_list', $data);
+    }
+
+
+public function display_users_with_roles() {
+        // Appel du modèle pour récupérer les utilisateurs avec leurs rôles
+        $data['responsables'] = $this->Responsable_model->get_users_with_roles();
+
+        // Charger la vue et passer les données
+        $this->load->view('responsable_list', $data);
+    }
+
+<tfoot>
+                                        <tr>
+											<th>Rôle</th>
+											<th>Fonction</th>
+											<th>Email</th>
+											<th>Téléphone</th>
+											<th>Login</th>
+											<th>Nom</th>
+											<th>Prénom</th>
+											<th>Actions</th>
+										</tr>
+                                    </tfoot>

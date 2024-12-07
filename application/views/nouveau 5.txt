@@ -1,0 +1,76 @@
+    <!-- Content Wrapper. Contains page content -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        
+		
+	<div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Listes des dossiers</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  
+                   <tr>
+						<th>Rôle</th>
+						<th>Fonction</th>
+						<th>Email</th>
+						<th>Téléphone</th>
+						<th>Login</th>
+						<th>Nom</th>
+						<th>Prénom</th>
+						<th>Actions</th>
+					</tr>
+					
+                  </thead>
+                  <tbody>
+						<?php foreach ($dossiers as $dossier): ?>
+											<tr>
+												<td><?php echo $responsable->libelle; ?></td>
+												<td><?php echo $responsable->fonction; ?></td>
+												<td><?php echo $responsable->email; ?></td>
+												<td><?php echo $responsable->telephone; ?></td>
+												<td><?php echo $responsable->login; ?></td>
+												<td><?php echo $responsable->nom; ?></td>
+												<td><?php echo $responsable->prenom; ?></td>
+												<td>
+													<a href="<?php echo site_url('responsable/view/'.$responsable->id_responsable); ?>">Voir</a>
+													<a href="<?php echo site_url('responsable/edit/'.$responsable->id_responsable); ?>">Éditer</a>
+													<a href="<?php echo site_url('responsable/delete/'.$responsable->id_responsable); ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce responsable ?')">Supprimer</a>
+												</td>
+											</tr>
+						<?php endforeach; ?>
+                  </tbody>
+                  
+                </table>
+				<a href="<?php echo site_url('responsable/add'); ?>">
+								<input type="submit" value="Ajouter un utilisateur" class="btn btn-success float-right">
+				</a>
+              </div>
+              <!-- /.card-body -->
+</div>	
+			  
+			  
+      
+ 
+     
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+       
+        <div class="card-body p-0">
+          </div>
+        <!-- /.card-body -->
+      </div>
+    
+  </div>
+  <!-- /.content-wrapper -->
+  
+

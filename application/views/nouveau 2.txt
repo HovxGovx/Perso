@@ -1,0 +1,39 @@
+<h2>Modifier un responsable</h2>
+	
+    <form action="<?php echo base_url('responsable/edit/'.$responsable->id_responsable); ?>" method="post">
+	
+		<label for="id_role">Rôle:</label>
+        <input type="text" name="id_role" id="email" value="<?php echo $responsable->id_role; ?>"><br>
+	
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" value="<?php echo $responsable->email; ?>"><br>
+
+        <label for="telephone">Téléphone:</label>
+        <input type="text" name="telephone" id="telephone" value="<?php echo $responsable->telephone; ?>"><br>
+
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" value="<?php echo $responsable->login; ?>"><br>
+
+        <label for="mdp">Mot de passe:</label>
+        <input type="password" name="mdp" id="mdp" value="<?php echo $responsable->mdp; ?>"><br>
+
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" id="nom" value="<?php echo $responsable->nom; ?>"><br>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" id="prenom" value="<?php echo $responsable->prenom; ?>"><br>
+
+        <input type="submit" value="Enregistrer">
+		
+    </form>
+
+     <!-- <div class="form-group" id="vocation">
+                                                                                                                         <label for="vocation">Vocation du terrain :</label>
+                                                                                                                         <select id="vocationSelect" class="form-control">
+                                                                                                                                 <option value="Agriculture">Agriculture</option>
+                                                                                                                                 <option value="Résidentiel">Résidentiel</option>
+                                                                                                                                 <option value="Commercial">Commercial</option>
+                                                                                                                                 <option value="Nouveau">Autre...</option>
+                                                                                                                         </select>
+                                                                                                                         <input id="vocationInput" name="vocation" type="text" class="form-control" placeholder="Entrez un nouveau" style="display:none;">
+                                                                                                                 </div> -->

@@ -1,0 +1,19 @@
+$data_dossier = array(
+            'numdossier' => $this->input->post('numdossier'),
+			'objetfiche' => $this->input->post('objetfiche'),
+			'date_demande' => $this->input->post('date_demande'),
+			'nature_demande' => $this->input->post('nature_demande'),
+			'description' => $this->input->post('description'),
+			'type_affaire' => $this->input->post('type_affaire'),
+			'num_affaire' => $this->input->post('num_affaire'),
+            // Ajoutez d'autres champs pour la table "dossier"
+        );
+		
+$data_terrain = array(
+            'superficie' => $this->input->post('superficie'),
+			'num_titre' => $this->input->post('num_titre'),
+			'num_parcelle' => $this->input->post('num_parcelle'),
+			'section' => $this->input->post('section'),
+			'typeterrain' => $this->input->post('type_terrain'),
+            // Ajoutez d'autres champs pour la table "terrain"
+        );
