@@ -1,0 +1,101 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+!application/*/.htaccess
+
+composer.lock
+tests/mocks/database/ci_test.sqlite
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+# Ignore le dossier système CodeIgniter (framework) 
+/system/*
+
+# Ne pas ignorer l'index de CodeIgniter dans le système
+!/system/index.html
+
+# Ignore les fichiers de cache et les logs
+/application/cache/*
+/application/logs/*
+
+# Ignore les fichiers de configuration spécifiques à l'environnement
+/application/config/development/*
+/application/config/testing/*
+/application/config/production/*
+/application/config/staging/*
+
+# Ne pas ignorer les fichiers de configuration principaux
+!/application/config/config.php
+!/application/config/database.php
+!/application/config/routes.php
+
+# Ne pas ignorer les fichiers MVC
+!/application/controllers/*
+!/application/models/*
+!/application/views/*
+# Ignore les fichiers du dossier public ou les assets
+/public/*
+# Ignore everything in /assets
+/assets/*
+/assets/js/pages
+/assets/js/pages/*
+/assets/js/.eslintrc.json
+/assets/js/adminlte.js
+/assets/js/adminlte.js.map
+assets/js/adminlte.min.js
+assets/js/adminlte.min.js.map
+assets/js/demo.js
+
+# Do not ignore the ajax directory and its content
+!/assets/js/
+!/assets/js/ajax/
+
+# Ignore les fichiers d'installation du serveur local (WAMP/XAMPP)
+/wamp64/*
+/xampp/*
+
+# Ignore les fichiers sensibles
+.env
+*.env
+
+# Ignore les fichiers de build (par exemple pour React)
+frontend/node_modules
+frontend/build
+
+# Ignore les fichiers temporaires du système et de l'éditeur
+*.bak
+*.swp
+*.tmp
+*.log
+
+# Ignore les fichiers et dossiers spécifiques aux IDE/éditeurs
+/.idea/
+/.vscode/
+/nbproject/
+/system/
+/uploads/
+# Ignore le fichier gitignore lui-même
+!.gitignore
